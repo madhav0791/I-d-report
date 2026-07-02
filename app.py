@@ -9,7 +9,7 @@ app.secret_key = 'your_secret_key'
 USERS_FILE = 'users.json'
 
 # Admin credentials
-ADMIN_USERNAME = 'Madhav@0701'
+ADMIN_USERNAME = 'Madhav'
 ADMIN_PASSWORD = 'Madhav@0701'
 
 # Function to load users
