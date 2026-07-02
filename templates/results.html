@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reports Results</title>
+</head>
+<body>
+    <h1>Generated Reports</h1>
+    {% for report in reports %}
+        <pre>{{ report }}</pre>
+        <hr>
+    {% endfor %}
+    <a href="/">Back</a>
+</body>
+</html>
