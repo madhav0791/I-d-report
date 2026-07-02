@@ -1,0 +1,13 @@
+<h2>Admin Panel</h2>
+<h3>Users Pending Approval</h3>
+<ul>
+    {% for user, info in users.items() %}
+        <li>
+            Name: {{ info['name'] }} | Username: {{ user }} | Approved: {{ info['approved'] }}
+            {% if not info['approved'] %}
+                <a href="/approve/{{ user }}">Approve</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+<a href="/logout">Logout</a>
